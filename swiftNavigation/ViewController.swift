@@ -16,15 +16,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        customizeSpinner()
+        customizeSpinner()
     }
     
     
-//    func customizeSpinner() {
-//        spinner.minimumValue = 0
-//        spinner.maximumValue = 100
-//        spinner.value = 10
-//    }
+    func customizeSpinner() {
+        spinner.minimumValue = 0
+        spinner.maximumValue = 100
+        spinner.value = 10
+    }
     
     @IBAction func spinnerChanged(_ sender: UISlider) {
         spinnerLabel.text = "\(spinner.value)"
